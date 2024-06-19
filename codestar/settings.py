@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-#++^hmfh4(97=(dg*u-*b(6@16xy!++r7u=ps7j8jk)k%l(vn!
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-cmoynan-djangoblog-9dxwnmrezhf.ws-eu114.gitpod.io",
     ".herokuapp.com"]
@@ -132,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
