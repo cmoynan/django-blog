@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 text-center">
+      <img src="{% static 'images/nobody.jpg' %}" width="75%" />
+    </div>
+    <div class="col-8">
+      <!-- Title goes between these h2 tags -->
+      <h2>About Chris</h2>
+      <!-- Content goes directly underneath this -->
+      <p>About Me
+        Hello! I'm Chris Moynan, an IT helpdesk professional from Maynooth, Kildare, Ireland. I have a keen interest in technology and a passion for helping others solve their tech-related problems. Currently, I'm expanding my skill set by learning coding and full-stack development, which I find both challenging and incredibly rewarding.
+        
+        When I'm not immersed in the world of IT and coding, you'll often find me at the gym. Fitness is a significant part of my life, and I believe in maintaining a healthy balance between work and personal well-being. My journey in tech and fitness keeps me motivated and driven to achieve new heights in both domains.
+        
+        I'm excited about the future and the opportunities that lie ahead in the tech industry. Feel free to reach out if you share similar interests or need assistance with IT issues!
+        
+        </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-right">
+      <!-- Updated on field goes in here -->
+
+      <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+    </div>
+  </div>
+</div>
+{% endblock content %}
